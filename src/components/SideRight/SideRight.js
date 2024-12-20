@@ -6,15 +6,18 @@ function SideRight({ isOpen, setIsOpen }) {
     const [elements, setElements] = useState([
         {
             name: "DASHBOARD",
-            logo: construction
+            logo: construction,
+            colorBorder: '#ff0000',
         },
         {
             name: "DASHBOARD",
-            logo: construction
+            logo: construction,
+            colorBorder: '#00ff00',
         },
         {
             name: "DASHBOARD",
-            logo: construction
+            logo: construction,
+            colorBorder: '#ff0000',
         }
     ]);
 
@@ -35,7 +38,7 @@ function SideRight({ isOpen, setIsOpen }) {
                    return(
                     <div key={index} className="flex flex-col border-collapse">
                     <div className=' flex justify-center items-center gap-[40px] py-[4px] border-[1px] border-[#b5b5b5]'>
-                        <div className="w-1/2 flex justify-center items-center">  <img src={elem.logo} className=' rounded-[100%]' /></div>
+                        <div className="w-1/2 flex justify-center items-center border-r-[3px] border-[]">  <img src={elem.logo} className=' rounded-[100%]' /></div>
                         <div className=' w-1/2'><p>{elem.name}</p></div>
                       
                     </div>

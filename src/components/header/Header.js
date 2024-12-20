@@ -15,7 +15,7 @@ function Header() {
 
     return (
         <>
-            <header className="bg-[#373737] w-full h-[80px] flex text-white px-[10px] items-center justify-between">
+            <header className="bg-[#373737] w-full h-[100px] flex text-white px-[10px] items-center justify-between md:h-[70px]">
                 <div className="justify-center h-[100%] items-center flex hover:bg-[#242829] p-[8px]">
                     <img src={logo} onClick={toggleSideDiv} />
                     <div>
@@ -23,7 +23,7 @@ function Header() {
                     </div>
 
                 </div>
-                <div className="flex flex-wrap justify-center items-center gap-[10px] h-[100%]">
+                <div className="flex flex-wrap justify-end items-center gap-[10px] h-[100%]">
 
                     <div className='hover:bg-[#242829] p-[8px] md:h-[100%] flex justify-center items-center'>
                         <p>HelpSupport</p>
@@ -37,7 +37,7 @@ function Header() {
                     </div>
                 </div>
             </header>
-            <div className="w-full h-[calc(100vh-80px)] border-[1px]  flex">
+            <div className="w-full h-[calc(100vh-100px)] border-[1px]  flex md:h-[calc(100vh-70px)]">
                 <SideRight isOpen={isOpen} setIsOpen={setIsOpen} />
                 <div>
 
